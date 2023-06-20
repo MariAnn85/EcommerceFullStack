@@ -8,20 +8,20 @@ Provides setup for Postgres database
 
 ##Technologies Used
 ##Server
-node.js 
-npm 
-express 
-jsonwebtoken 
-nodemon 
-cors 
+* node.js 
+* npm 
+* express 
+* jsonwebtoken 
+* nodemon 
+* cors 
 
 ##Client
-React
-Bootstrap
-React-router-dom
+* React
+* Bootstrap
+* React-router-dom
 
 ##Database
-PostgresSQL
+* PostgresSQL
 
 ## Features
 * User registration and login
@@ -51,11 +51,12 @@ To test the application
 * Add the following fields with respective values to the .env file:
 
 # Postgres Database
-PGHOST=
-PGUSER=
-PGDATABASE=
-PGPASSWORD=
-PGPORT=
+* PGHOST=
+* PGUSER=
+* PGDATABASE=
+* PGPASSWORD=
+* PGPORT=
+  
 * Choose a random string as JWT secret or generate it in your terminal
 * Copy it and place in in your .env file
 * Example
