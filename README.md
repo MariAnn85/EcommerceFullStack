@@ -5,16 +5,15 @@
 Backend API for an e-commerce site built with Node.js and Express
 Endpoints for shopping, authentication, user accounts, and checkout
 Provides setup for Postgres database
-##Technologies Used
 
+##Technologies Used
 ##Server
 node.js 
 npm 
 express 
-jsonwebtoken - version 8.5.1
-stripe - version 8.195.0
-nodemon - version 2.0.15
-cors - version 2.8.5
+jsonwebtoken 
+nodemon 
+cors 
 
 ##Client
 React
