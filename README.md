@@ -7,6 +7,7 @@ Endpoints for shopping, authentication, user accounts, and checkout
 Provides setup for Postgres database
 
 ##Technologies Used
+
 ##Server
 * node.js 
 * npm 
@@ -51,16 +52,16 @@ To test the application
 * Add the following fields with respective values to the .env file:
 
 # Postgres Database
-* PGHOST=
-* PGUSER=
-* PGDATABASE=
-* PGPASSWORD=
-* PGPORT=
+* DB_NAME=
+* DB_USER=
+* DB_PASSWORD=
+* DB_HOST=
+* DB_PORT=
   
 * Choose a random string as JWT secret or generate it in your terminal
 * Copy it and place in in your .env file
 * Example
-TOKEN_SECRET="yourrandomlygeneratedsecret"
+  SECRET_KEY="yourrandomlygeneratedsecret"
 * Start the application
 ```
 * Register via http://localhost:3000/auth/register with username, email, and password in the body as JSON format via Postman or any alternatives
