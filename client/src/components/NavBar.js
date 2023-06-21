@@ -7,10 +7,14 @@ import {ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from "../utils/consts";
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
+
+
+
 const NavBar = observer(() => {
     const {user} = useContext(Context)
-    const history = useHistory()
+    const navigate = useNavigate();
+    //const history = useHistory()
 
     const logOut = () => {
         user.setUser({})
@@ -25,7 +29,7 @@ const NavBar = observer(() => {
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button
                             variant={"outline-light"}
-                            onClick={() => history.push(ADMIN_ROUTE)}
+                            onClick={() => navigate(ADMIN_ROUTE)}
                         >
                             Ադմին պանել
                         </Button>
@@ -39,7 +43,7 @@ const NavBar = observer(() => {
                     </Nav>
                     :
                     <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button variant={"outline-light"} onClick={() => history.push(LOGIN_ROUTE)}>Մուտք</Button>
+                        <Button variant={"outline-light"} onClick={() => navigate(LOGIN_ROUTE)}>Մուտք</Button>
                     </Nav>
                 }
             </Container>
